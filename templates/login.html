@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Return to Landing Page</a>
+    </nav> <br>
+        {{errormsg}} <br> <br>
+    <form action="/login" method="POST">
+        <label for="credential">Username / Email Address: </label> <br>
+        <input type="text" id="credential" name="credential" minlength="5" maxlength="100" placeholder="Username or Email" required> <br>
+        <br>
+        <label for="password">Password: </label> <br>
+        <input type="password" id="password" name="password" minlength="8" maxlength="50" placeholder="Password" required>
+        <br> <br>
+        <input type="submit" value="Log In">
+    </form>
+
+</body>
+</html>
